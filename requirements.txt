@@ -2,7 +2,7 @@
 #    uv export -o requirements.txt --no-hashes
 amis-python @ git+https://github.com/TeamPGM/amis-python@5ba7aac5b793f471e6818aefe21107a1b2088e8c
     # via pagermaid-modify
-annotated-doc==0.0.3
+annotated-doc==0.0.4
     # via fastapi
 annotated-types==0.7.0
     # via pydantic
@@ -10,11 +10,11 @@ anyio==4.5.2 ; python_full_version < '3.9'
     # via
     #   httpx
     #   starlette
-anyio==4.11.0 ; python_full_version >= '3.9'
+anyio==4.12.1 ; python_full_version >= '3.9'
     # via
     #   httpx
     #   starlette
-apscheduler==3.11.1
+apscheduler==3.11.2
     # via pagermaid-modify
 async-timeout==5.0.1 ; python_full_version < '3.11'
     # via python-socks
@@ -24,14 +24,14 @@ backports-zoneinfo==0.2.1 ; python_full_version < '3.9'
     #   tzlocal
 casbin==1.43.0
     # via pagermaid-modify
-certifi==2025.10.5
+certifi==2026.1.4
     # via
     #   httpcore
     #   httpx
     #   sentry-sdk
 click==8.1.8 ; python_full_version < '3.10'
     # via uvicorn
-click==8.3.0 ; python_full_version >= '3.10'
+click==8.3.1 ; python_full_version >= '3.10'
     # via uvicorn
 colorama==0.4.6 ; sys_platform == 'win32'
     # via click
@@ -39,9 +39,11 @@ coloredlogs==15.0.1
     # via pagermaid-modify
 cryptg==0.5.2
     # via pagermaid-modify
-exceptiongroup==1.3.0 ; python_full_version < '3.11'
+exceptiongroup==1.3.1 ; python_full_version < '3.11'
     # via anyio
-fastapi==0.121.0
+fastapi==0.124.4 ; python_full_version < '3.9'
+    # via pagermaid-modify
+fastapi==0.128.0 ; python_full_version >= '3.9'
     # via pagermaid-modify
 h11==0.16.0
     # via
@@ -67,19 +69,19 @@ pillow==10.4.0 ; python_full_version < '3.9'
     # via pagermaid-modify
 pillow==11.3.0 ; python_full_version == '3.9.*'
     # via pagermaid-modify
-pillow==12.0.0 ; python_full_version >= '3.10'
+pillow==12.1.0 ; python_full_version >= '3.10'
     # via pagermaid-modify
-psutil==7.1.3
+psutil==7.2.2
     # via pagermaid-modify
 pyaes==1.6.1
     # via telethon
-pyasn1==0.6.1
+pyasn1==0.6.2
     # via rsa
 pydantic==2.10.6 ; python_full_version < '3.9'
     # via
     #   amis-python
     #   fastapi
-pydantic==2.12.4 ; python_full_version >= '3.9'
+pydantic==2.12.5 ; python_full_version >= '3.9'
     # via
     #   amis-python
     #   fastapi
@@ -97,7 +99,7 @@ pyqrcode==1.2.1
     # via pagermaid-modify
 pyreadline3==3.5.4 ; sys_platform == 'win32'
     # via humanfriendly
-python-socks==2.7.2
+python-socks==2.8.0
     # via pagermaid-modify
 pytz==2025.2
     # via pagermaid-modify
@@ -105,14 +107,14 @@ pyyaml==6.0.3
     # via pagermaid-modify
 rsa==4.9.1
     # via telethon
-ruff==0.14.4
-sentry-sdk==2.43.0
+ruff==0.14.14
+sentry-sdk==2.51.0
     # via pagermaid-modify
 simpleeval==0.9.13 ; python_full_version < '3.9'
     # via casbin
 simpleeval==1.0.3 ; python_full_version >= '3.9'
     # via casbin
-sniffio==1.3.1
+sniffio==1.3.1 ; python_full_version < '3.9'
     # via anyio
 socksio==1.0.0
     # via httpx
@@ -122,11 +124,15 @@ starlette==0.44.0 ; python_full_version < '3.9'
     # via
     #   fastapi
     #   pagermaid-modify
-starlette==0.49.3 ; python_full_version >= '3.9'
+starlette==0.49.3 ; python_full_version == '3.9.*'
     # via
     #   fastapi
     #   pagermaid-modify
-telethon @ git+https://github.com/TeamPGM/Telethon@1.5.0
+starlette==0.50.0 ; python_full_version >= '3.10'
+    # via
+    #   fastapi
+    #   pagermaid-modify
+telethon @ git+https://github.com/TeamPGM/Telethon@d0382f7585c4aae8003166399dcaf0dc5c425081
     # via pagermaid-modify
 typing-extensions==4.13.2 ; python_full_version < '3.9'
     # via
@@ -150,7 +156,7 @@ typing-extensions==4.15.0 ; python_full_version >= '3.9'
     #   uvicorn
 typing-inspection==0.4.2 ; python_full_version >= '3.9'
     # via pydantic
-tzdata==2025.2 ; sys_platform == 'win32'
+tzdata==2025.3 ; sys_platform == 'win32'
     # via tzlocal
 tzlocal==5.2 ; python_full_version < '3.9'
     # via apscheduler
@@ -158,9 +164,11 @@ tzlocal==5.3.1 ; python_full_version >= '3.9'
     # via apscheduler
 urllib3==2.2.3 ; python_full_version < '3.9'
     # via sentry-sdk
-urllib3==2.5.0 ; python_full_version >= '3.9'
+urllib3==2.6.3 ; python_full_version >= '3.9'
     # via sentry-sdk
 uvicorn==0.33.0 ; python_full_version < '3.9'
     # via pagermaid-modify
-uvicorn==0.38.0 ; python_full_version >= '3.9'
+uvicorn==0.39.0 ; python_full_version == '3.9.*'
+    # via pagermaid-modify
+uvicorn==0.40.0 ; python_full_version >= '3.10'
     # via pagermaid-modify
