@@ -26,6 +26,7 @@ dependencies = [
     "starlette>=0.52.0",
     "pyjwt>=2.12.0",
     "python-socks[asyncio]>=2.8.1",
+    "winuvloop>=0.2.4",
 ]
 requires-python = ">=3.10.0"
 readme = "README.md"
